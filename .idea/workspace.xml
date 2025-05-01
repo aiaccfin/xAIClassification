@@ -5,132 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fabdf8ed-c221-4c71-b8c7-0d2e6e8e8f02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/FundingAgreementAmendmentNo.2-8March2016.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/Master-Agreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/MasterServicesAgreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/PSA.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/Subcontract Agreement Rider.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/Swinney_Third_Amendment_to_Extension_of_Agreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/master-services-agreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Agreements/sco_sap_final_settlement_agreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/DeedOfTrustShortForm (2).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/DeedOfTrustShortForm.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/Deed_of_Trust_-_RALLimited_Trust.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/Lease Summary Sample (2).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/Lease Summary Sample.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/Texas-General-Warranty-Deed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/app_d_deed_of_trust (2).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/app_d_deed_of_trust.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/bc-property-condition-assessment-sample-report.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/crossman-real-estate-1998-07-31.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/crossman-real-estate-1998-07-31.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/lease_summary_eng (2).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/lease_summary_eng.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Deeds/warranty_deed.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/0803_job_description_vol_coordinator_0053.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/11.02.17 - Administrative Director - Texas Ballet.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/54_Line-Cook.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Administrative-Assistant-Jan-28-2014.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Board_Policy_Manual_Examples.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/CommuterBenefits-EmployerComplianceForm.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Customer Service Associate.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/EMPLOYEE PERFORMANCE APPRAISAL FORM.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Employee-Data-Privacy-Policy-Amended-and-Restated-Apr-23-2012-new-logo.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Financial_org chart.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/HR Policy 5.17 Travel and Expense Reimbursements.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Job Description.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Marketing_orgchart.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/NIH_Non-Disclosure_Agreement.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/NOAA_WorkforceSuccessionPlanningToolkit.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Org_chart.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Pension-Plan-Plan-A-1 Employees.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Plan 87.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/Position Decription - Teacher.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/SPD_20120101_Summary_Plan_Doc_WM.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/SuccessionPlanningCareerPipelineToolKit_213235_7.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/handbook.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/job-desc-template.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/module_ii___a_guide_to_improved_workplace_skills_planning.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/non-disclosure-agreement-mutual-generic-blank.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/nondisclosureagreement.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/nondisclosureagreement.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/performance_appraisal_form(1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/performance_appraisal_form.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/plan_summary(1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/plan_summary.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/reporting-and-disclosure-guide-for-employee-benefit-plans_0.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Human Resources/severe-weather-emergency-planning-and-preperation-checklist.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/3i-group.tax.2004.11.29.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/3i-group.tax.2004.11.29.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/53-1 Sales Tax.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/72010143.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/E1934V12-SalesReturn.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/F27524.PDF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/Tax Year 2016 Corporation e-File Signature Form VA-8879C.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/abraxis-tax-2007-11-13.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/abraxis-tax-2007-11-13.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/abraxis-tax-2007-11-13doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/aramark-tax-2013-05-19.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/aramark-tax-2013-05-19.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/blackstone-tax-2007.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/blackstone-tax-2007.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/clear-channel-tax-2005-12-21.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/clear-channel-tax-2005-12-21.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/dw.tax.2004.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/dw.tax.2004.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/f8879c.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/f941--2012.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/f941--2016.PDF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/lsb-tax-1997-11-21.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/lsb-tax-1997-11-21.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/mayer-brown-tax.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/mayer-brown-tax.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/network-associates-tax.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/network-associates-tax.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/norwest-tax-1997-10-01.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/norwest-tax-1997-10-01.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/pence-distribution-1996.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/pence-distribution-1996.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/resource-america-tax-2004.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/resource-america-tax-2004.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/s-012f.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/saic.tax.1997.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/saic.tax.1997.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/st100.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/st810.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/tax-receivable-2005-05-10.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/tax-receivable-2005-05-10.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/tax-receivable-2008.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/tax-receivable-2008.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/tax.indemn.2004.09.24.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/tax.indemn.2004.09.24.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/united-online-tax-2007.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/united-online-tax-2007.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/weider.tax.1997.03.doc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Taxes/weider.tax.1997.03.doc.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/2015springvaluationreport.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/2016.GAVR.FINAL.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/ABAR sample excerpt.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/AxiomValuationSampleCertifiedReport.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/Commercial Valuation_Report (Example).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/Company-Valuation-Report-MSFT-2010-11-15.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/HSBC_architect_valuation_report.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/Kinnisvara_hindamise_akt_30.09_Ukraina.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/StateRoad84Appraisal.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/VR_Sum08.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/english_danaat_al_madina_valuation_report_updated.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/fair-valuation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/mortgageValuation_1429034405.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/Valuations/property-valuation-report.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/images/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/pdf/xai_dataset.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xai_dataset.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/pdf/xai_dataset.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/model_nbc.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/model_rf.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xAIClassification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xAIClassification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env" beforeDir="false" afterPath="$PROJECT_DIR$/env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/1Step 2.TF-IDF.py" beforePathEscaped="$PROJECT_DIR$/pages/1📸Step 2.TF-IDF.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1Step 2.TF-IDF.py" afterPathEscaped="$PROJECT_DIR$/pages/1📸Step 2.TF-IDF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/1Step 3.Save Training Dataset.py" beforePathEscaped="$PROJECT_DIR$/pages/1📸Step 3.Save Training Dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1Step 3.RFC.py" afterPathEscaped="$PROJECT_DIR$/pages/1📸Step 3.RFC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/1Step 4.Save Training Embeddings.py" beforePathEscaped="$PROJECT_DIR$/pages/1📸Step 4.Save Training Embeddings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1Step 4.NBC.py" afterPathEscaped="$PROJECT_DIR$/pages/1📸Step 4.NBC.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/1Step 5.Classification Training Validation.py" beforePathEscaped="$PROJECT_DIR$/pages/1📸Step 5.Classification Training Validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/1Step 5.XGB.py" afterPathEscaped="$PROJECT_DIR$/pages/1📸Step 5.XGB.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "aiaccfin"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aiaccfin/xAIClassification.git",
+    "accountId": "20ad44e8-50fa-490b-8799-56f09148d346"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -149,8 +46,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -158,6 +57,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "A:/xAIBooks",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -166,11 +66,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\xAIClassification" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
       </set>
     </attachedChunks>
   </component>
@@ -188,6 +93,7 @@
       <workItem from="1727287845302" duration="1063000" />
       <workItem from="1727295860109" duration="1361000" />
       <workItem from="1727297632424" duration="10937000" />
+      <workItem from="1727362918948" duration="13255000" />
     </task>
     <servers />
   </component>

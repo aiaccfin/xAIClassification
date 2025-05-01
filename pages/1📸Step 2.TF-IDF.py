@@ -12,7 +12,8 @@ from sklearn.preprocessing import LabelEncoder
 from utils import streamlit_components, face_pipline, image_processing, face_processing
 
 
-dataset_pkl = os.getenv('XAI_DATASET_finalframe')
+dataset_pkl = os.getenv('XAI_DATASET_finalframe_pkl')
+dataset_h5 = os.getenv('XAI_DATASET_finalframe_h5')
 finalframe = pd.read_pickle(dataset_pkl)
 
 streamlit_components.streamlit_ui('🦣 Term Frequency-Inverse Doc Frequency')
@@ -29,3 +30,9 @@ if button("TF-IDF?", key="button1"):
 
     from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+    # Save all datasets in one HDF5 file
+    X_train.to_hdf(dataset_h5, key='X_train', mode='w')
+    X_test.to_hdf(dataset_h5, key='X_test', mode='a')
+    pd.Series(y_train).to_hdf(dataset_h5, key='y_train', mode='a')
+    pd.Series(y_test).to_hdf(dataset_h5, key='y_test', mode='a')

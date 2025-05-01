@@ -1,3 +1,11 @@
+#xAI
+XAI_DATASET_finalframe = ./data/pdf/xai_dataset.pkl
+
+XAI_DATASET_FOLDER_tax = ./data/pdf/Taxes
+XAI_DATASET_FOLDER_valuation = ./data/pdf/Valuations
+XAI_DATASET_FOLDER_agreement = ./data/pdf/Agreements
+
+
 #Global
 TRAIN=./data/train/
 VAL  =./data/val/
