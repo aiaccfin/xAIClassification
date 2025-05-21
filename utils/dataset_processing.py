@@ -108,10 +108,38 @@ def save_dataset_prod(dataset, face_folder):
 
 
 
+# def extract_text_from_uploaded_pdf(uploaded_file):
+#     # Use pdfminer.high_level for simplicity and robustness
+#     text = extract_text(BytesIO(uploaded_file.read()))
+#     return text
+
+
+from pdf2image import convert_from_bytes
+import pytesseract
+
 def extract_text_from_uploaded_pdf(uploaded_file):
-    # Use pdfminer.high_level for simplicity and robustness
-    text = extract_text(BytesIO(uploaded_file.read()))
-    return text
+    # Try extracting text with pdfminer
+    try:
+        uploaded_file.seek(0)  # Ensure pointer is at start
+        text = extract_text(BytesIO(uploaded_file.read()))
+        if text.strip():  # If there's actual text content
+            return text
+    except Exception as e:
+        st.warning(f"Text extraction with pdfminer failed: {e}")
+
+    # Fallback to OCR if no text found
+    st.info("Falling back to OCR for image-based PDF.")
+    uploaded_file.seek(0)
+    try:
+        images = convert_from_bytes(uploaded_file.read())
+        ocr_text = ""
+        for img in images:
+            ocr_text += pytesseract.image_to_string(img)
+        return ocr_text
+    except Exception as e:
+        st.error(f"OCR extraction failed: {e}")
+        return ""
+
 
 
 def text_processing_for_prediction(text):
