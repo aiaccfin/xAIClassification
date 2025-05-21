@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_extras.stateful_button import button
 from utils import dataset_processing, streamlit_components, image_processing, face_processing
 
-import os
+import os, config
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -14,13 +14,14 @@ from sklearn import preprocessing
 
 streamlit_components.streamlit_ui('🦣 Random Forest Classifier')
 
-model_rf   = os.getenv('XAI_MODEL_rf')
+model_rf   = config.XAI_MODEL_rf
 
-dataset_h5 = os.getenv('XAI_DATASET_finalframe_h5')
+dataset_h5  = config.XAI_DATASET_finalframe_h5
+
 X_train = pd.read_hdf(dataset_h5 , key='X_train')
-X_test = pd.read_hdf(dataset_h5, key='X_test')
+X_test  = pd.read_hdf(dataset_h5, key='X_test')
 y_train = pd.read_hdf(dataset_h5, key='y_train')
-y_test = pd.read_hdf(dataset_h5, key='y_test')
+y_test  = pd.read_hdf(dataset_h5, key='y_test')
 
 my_tags = ['Agreements', 'Taxes','Valuations']
 

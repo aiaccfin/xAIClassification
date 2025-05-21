@@ -4,28 +4,24 @@ from streamlit_extras.stateful_button import button
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-import os
 import pandas as pd
 
-from utils import streamlit_components, face_pipline, image_processing, face_processing
-from utils import dataset_processing, streamlit_components, image_processing, face_processing
-from utils import streamlit_components, face_pipline, image_processing, embedding_processing
+import config
+from utils import streamlit_components, dataset_processing
+
 
 streamlit_components.streamlit_ui('🦣 PDF Processing to pkl')
 
-dataset_tax    = os.getenv('XAI_DATASET_FOLDER_tax')
-dataset_valuation= os.getenv('XAI_DATASET_FOLDER_valuation')
-dataset_agreement= os.getenv('XAI_DATASET_FOLDER_agreement')
+dataset_tax    = config.XAI_DATASET_FOLDER_tax
+dataset_valuation= config.XAI_DATASET_FOLDER_valuation
+dataset_agreement= config.XAI_DATASET_FOLDER_agreement
 
-dataset_pkl = os.getenv('XAI_DATASET_finalframe')
+dataset_pkl = config.XAI_DATASET_finalframe
 
-
-embeddings = os.getenv('PROD_EMBEDDINGS_ywsd')
-model      = os.getenv('FACENET_MODEL')
-
-st.text(f"dataset tax folder: {dataset_tax}")
+st.text(f"dataset tax1 folder: {dataset_tax}")
 st.text(f"dataset valuation folder: {dataset_valuation}")
 st.text(f"dataset agreement folder: {dataset_agreement}")
+st.text(f"pkl: {dataset_pkl}")
 
 if button("Convert?", key="but5"):
     textcontents_tax = dataset_processing.convert_pdf_to_txt(dataset_tax)

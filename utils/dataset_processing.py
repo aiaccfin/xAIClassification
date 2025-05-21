@@ -11,6 +11,9 @@ from nltk.stem import WordNetLemmatizer
 from pdfminer.converter import TextConverter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
+from pdfminer.high_level import extract_text
+
+from io import BytesIO
 
 import streamlit as st
 
@@ -103,3 +106,29 @@ def save_dataset_prod(dataset, face_folder):
         numpy.savez_compressed(dataset, trainX, trainy, file_names)
     return dataset
 
+
+
+def extract_text_from_uploaded_pdf(uploaded_file):
+    # Use pdfminer.high_level for simplicity and robustness
+    text = extract_text(BytesIO(uploaded_file.read()))
+    return text
+
+
+def text_processing_for_prediction(text):
+    import string
+    import pandas as pd
+    from nltk.corpus import stopwords
+    from nltk.stem import WordNetLemmatizer
+
+    df = pd.DataFrame([text], columns=['Text_Data'])
+
+    # Pre-processing the extracted textual data
+    df['Text_Data'] = df['Text_Data'].apply(lambda x: " ".join(x.lower() for x in x.split())) # lowercase
+    df['Text_Data'] = df['Text_Data'].str.replace('[^\w\s]', '', regex=True)  # remove punctuation
+    df['Text_Data'] = df['Text_Data'].str.replace('\d+', '', regex=True)      # remove numbers
+    stop = stopwords.words('english')
+    df['Text_Data'] = df['Text_Data'].apply(lambda x: " ".join(x for x in x.split() if x not in stop))  # remove stopwords
+    stemmer = WordNetLemmatizer()
+    df['Text_Data'] = df['Text_Data'].apply(lambda x: " ".join(stemmer.lemmatize(word) for word in x.split()))  # lemmatize
+    df['Identifiers'] = 'user_upload'
+    return df

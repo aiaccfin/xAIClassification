@@ -1,19 +1,20 @@
-import streamlit as st, os
+import streamlit as st, pickle
 from streamlit_extras.stateful_button import button
 
 import pandas as pd
 
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 
+import config
 
-from utils import streamlit_components, face_pipline, image_processing, face_processing
+from utils import streamlit_components
 
+dataset_pkl = config.XAI_DATASET_finalframe
+dataset_h5  = config.XAI_DATASET_finalframe_h5
+vectorizer_pkl  = config.XAI_DATASET_vector
 
-dataset_pkl = os.getenv('XAI_DATASET_finalframe_pkl')
-dataset_h5 = os.getenv('XAI_DATASET_finalframe_h5')
 finalframe = pd.read_pickle(dataset_pkl)
 
 streamlit_components.streamlit_ui('🦣 Term Frequency-Inverse Doc Frequency')
@@ -28,6 +29,7 @@ if button("TF-IDF?", key="button1"):
     labelencoder = LabelEncoder()  # Converting the labels to numeric labels
     y = labelencoder.fit_transform(finalframe['Category'])
 
+
     from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
 
@@ -36,3 +38,9 @@ if button("TF-IDF?", key="button1"):
     X_test.to_hdf(dataset_h5, key='X_test', mode='a')
     pd.Series(y_train).to_hdf(dataset_h5, key='y_train', mode='a')
     pd.Series(y_test).to_hdf(dataset_h5, key='y_test', mode='a')
+
+    with open(vectorizer_pkl, 'wb') as f:
+            pickle.dump(tfidfconverter, f)
+
+    st.success(f"✅ TF-IDF vectorizer saved to: {vectorizer_pkl}")
+    st.success(f"✅ Training data saved to: {dataset_h5}")
