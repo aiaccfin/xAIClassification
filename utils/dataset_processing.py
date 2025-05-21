@@ -13,6 +13,10 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.high_level import extract_text
 
+from pdf2image import convert_from_path
+
+from PIL import Image
+
 from io import BytesIO
 
 import streamlit as st
@@ -23,30 +27,73 @@ from sklearn.svm import SVC
 from utils.face_processing import load_faces_from_train_val_prod, load_faces_prod, load_faces_with_path
 
 
-def convert_pdf_to_txt(path):
+def convert_files_to_text(path):
     filelist = os.listdir(path)
-    documentcollection = []
-    for files in filelist:
-        files = os.path.join(path, files)
-        documentcollection.append(files)
-    for ifiles in documentcollection:
-        if ifiles.endswith('.pdf') or ifiles.endswith('.PDF'):  # different extensions on the raw data
-            with open(ifiles, 'rb') as fh:
-                for page in PDFPage.get_pages(fh,
-                                              caching=True,
-                                              check_extractable=True):
-                    resource_manager = PDFResourceManager()
-                    fake_file_handle = io.StringIO()
-                    converter = TextConverter(resource_manager, fake_file_handle)
-                    page_interpreter = PDFPageInterpreter(resource_manager, converter)
-                    page_interpreter.process_page(page)
+    for filename in filelist:
+        file_path = os.path.join(path, filename)
+        ext = filename.lower()
 
-                    text = fake_file_handle.getvalue()  # extraction of the text data
+        if ext.endswith('.pdf'):
+            # Try extracting text-based first
+            try:
+                with open(file_path, 'rb') as fh:
+                    for page in PDFPage.get_pages(fh, caching=True, check_extractable=True):
+                        resource_manager = PDFResourceManager()
+                        fake_file_handle = io.StringIO()
+                        converter = TextConverter(resource_manager, fake_file_handle)
+                        page_interpreter = PDFPageInterpreter(resource_manager, converter)
+                        page_interpreter.process_page(page)
+                        text = fake_file_handle.getvalue()
+
+                        converter.close()
+                        fake_file_handle.close()
+
+                        if text.strip():
+                            yield text
+                        else:
+                            raise ValueError("Empty page detected")
+
+            except:
+                # If above fails, fallback to OCR (image-based PDF)
+                images = convert_from_path(file_path)
+                for image in images:
+                    text = pytesseract.image_to_string(image)
+                    if text.strip():
+                        yield text
+
+        elif ext.endswith(('.jpg', '.jpeg', '.png')):
+            try:
+                image = Image.open(file_path)
+                text = pytesseract.image_to_string(image)
+                if text.strip():
                     yield text
+            except Exception as e:
+                print(f"OCR failed for image {filename}: {e}")
 
-                    # closing open handles
-                    converter.close()
-                    fake_file_handle.close()
+# def convert_pdf_to_txt(path):
+#     filelist = os.listdir(path)
+#     documentcollection = []
+#     for files in filelist:
+#         files = os.path.join(path, files)
+#         documentcollection.append(files)
+#     for ifiles in documentcollection:
+#         if ifiles.endswith('.pdf') or ifiles.endswith('.PDF'):  # different extensions on the raw data
+#             with open(ifiles, 'rb') as fh:
+#                 for page in PDFPage.get_pages(fh,
+#                                               caching=True,
+#                                               check_extractable=True):
+#                     resource_manager = PDFResourceManager()
+#                     fake_file_handle = io.StringIO()
+#                     converter = TextConverter(resource_manager, fake_file_handle)
+#                     page_interpreter = PDFPageInterpreter(resource_manager, converter)
+#                     page_interpreter.process_page(page)
+
+#                     text = fake_file_handle.getvalue()  # extraction of the text data
+#                     yield text
+
+#                     # closing open handles
+#                     converter.close()
+#                     fake_file_handle.close()
 
 
 def text_processing(textcontents, category, identifier):

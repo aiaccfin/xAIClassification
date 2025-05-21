@@ -1,12 +1,12 @@
-import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-load_dotenv()
-
-BASE_DIR = Path('./')
+BASE_DIR = Path('./xai')
 PDF_DIR = BASE_DIR / 'data/pdf'
 MODEL_DIR = BASE_DIR / 'models'
+
+# BASE_DIR = Path('./')
+# PDF_DIR = BASE_DIR / 'data/pdf'
+# MODEL_DIR = BASE_DIR / 'models'
 
 # === xAI Paths ===
 XAI_DATASET_FOLDER_tax       = PDF_DIR / "Taxes"
