@@ -8,11 +8,11 @@ def streamlit_ui(main_title):
     st.markdown("""
         <style>
             [data-testid="stSidebarNav"] {
-                background-image: url(https://omnidevx.netlify.app/logo/aipro.png);
-                background-size: 300px; /* Set the width and height of the image */
+                background-image: url(https://omnidevx.netlify.app/logo/aiacc.png);
+                background-size: 180px; /* Set the width and height of the image */
                 background-repeat: no-repeat;
-                padding-top: 80px;
-                background-position: 15px 10px;
+                padding-top: 120px;
+                background-position: 60px 1px;
             }
         </style>
         """,
@@ -21,7 +21,7 @@ def streamlit_ui(main_title):
 
 
 def general():
-    st.write(os.getenv('YCC'))
+    st.write(os.getenv('TRAIN'))
     st.markdown('''
         Extracting attachment from email, we need classify them.
     '''
